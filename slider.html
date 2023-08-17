@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Common styles for slider and slides */
+.slider-container {
+  width: 100%;
+  max-width: 600px; /* Adjust to your desired width */
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  flex: 0 0 33.33%; /* Display 3 slides in desktop view */
+  /* Add any styling for slide content */
+}
+
+/* Styles for phone view */
+@media (max-width: 767px) {
+  .slide {
+    flex: 0 0 100%; /* Display 1 slide in phone view */
+  }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+               <!-- Content for slide 1 -->
+               <img src="images/download (7).png">
+               <p>I have been through some Internship programmes and training in the past, but none has been so impactful as my training session with Cholatrek. I've been able to discovered so many things about Product Design owing to your efforts. I've grown from being a beginner to an intermediate level Product Designer (UI/UX).</p>
+               <div class="person">
+                   <img src="images/6d85b1e5-1307-4365-a4ab-4e44c319bdad.png">
+                   <div class="detail">
+                       <h3>Oyedeji Adekunle</h3>
+                       <p>Product Design</p>
+                   </div>
+               </div>
+          </div>
+          <div class="slide">
+              <!-- Content for slide 2 -->
+              <img src="images/download (7).png">
+              <p>with the period of times I spent at Cholatrek I have been able to achieve and learn develop skills like JavaScript and React.js, they have highly skilled Instructors. All thanks to my tutor Miss Medo Miriam who has always been a good helping hand to me and my colleagues she also come to our aid when we are in trouble or facing bug.</p>
+              <div class="person">
+                  <img src="images/6d85b1e5-1307-4365-a4ab-4e44c319bdad.png">
+                  <div class="detail">
+                      <h3>Ayeobasan John</h3>
+                      <p>Frontend Web development</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide">
+              <!-- Content for slide 3 -->
+              <img src="images/download (7).png">
+              <p>I started this course as a novice in programming and had no idea of what what tech is. I was opportuned to be mentored by Miss Medo Miriam who has been so helpful. So far have been able to learn and master HTML CSS and React Js and I am also happy my github has been filled with useful projects</p>
+              <div class="person">
+                  <img src="images/6d85b1e5-1307-4365-a4ab-4e44c319bdad.png">
+                  <div class="detail">
+                      <h3> Akintelure Micheal</h3>
+                      <p>Frontend Web development</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide">
+              <!-- Content for slide 4 -->
+              <img src="images/download (7).png">
+              <p>I started this course as a complete novice and I had no knowledge of Html, css, React and javascript but I was privileged to be tutored by Miss. Medo Miriam who introduced these things comprehensively In the simplest and easiest way. The classes were educative, impactful and most importantly interactive.</p>
+              <div class="person">
+                  <img src="images/6d85b1e5-1307-4365-a4ab-4e44c319bdad.png">
+                  <div class="detail">
+                      <h3>Akinfolarin kayode</h3>
+                      <p>Front-end web development (ReactJs)</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Add more slides as needed -->
+
+          <div class="slide">
+            <!-- Content for slide 5 -->
+            <img src="images/download (7).png">
+            <p>I have always look forward to establishing a career in the field of Idea. Cholatrek Institute gave me the opportunity to learn Product Design(The third stage was the beginning of Innovation for me). My Tutors were selfless as they gave their all during the training. Thank you Cholatrek Institute for your impact on we the younger generation. We will make you proud.</p>
+            <div class="person">
+                <img src="images/6d85b1e5-1307-4365-a4ab-4e44c319bdad.png">
+                <div class="detail">
+                    <h3>Ademuyiwa Odunayo</h3>
+                    <p>Product Design(UI/UX)</p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="prev-btn">&larr;</button>
+        <button class="next-btn">&rarr;</button>
+      </div>
+
+
+      <script>
+        const slider = document.querySelector(".slider");
+        const prevButton = document.querySelector(".prev-btn");
+        const nextButton = document.querySelector(".next-btn");
+        let slideIndex = 0;
+      
+        // Event listeners for previous and next buttons
+        prevButton.addEventListener("click", () => {
+          slideIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
+          updateSlider();
+        });
+      
+        nextButton.addEventListener("click", () => {
+          slideIndex = (slideIndex + 1) % slider.children.length;
+          updateSlider();
+        });
+      
+        // Function to update the slider position
+        function updateSlider() {
+          const slideWidth = slider.children[0].clientWidth;
+          slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+        }
+      </script>
+      
+</body>
+</html>
+

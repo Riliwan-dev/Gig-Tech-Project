@@ -1,0 +1,133 @@
+.personal{
+    padding-bottom: 30px;
+}
+.personal div{
+    flex: 6;
+}
+.personal div .malik{
+    position: absolute;
+    /* left: 50px; */
+    display: none;
+    top: 95%;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    width: 95%;
+    gap: 10px;
+}
+.personal div .malik div{
+    background-color: rgb(167, 167, 167);
+    border-radius: 12px;
+    padding: 1rem;
+    width: 14%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.full-course{
+    margin-top: 10px;
+}
+.full-course .net .name .curriculum{
+    background-color: white;
+    color: orangered;
+    border: 1px solid orangered;
+    margin-bottom: 20px;
+}
+.full-course .net .name .curriculum:hover{
+    transition: 3s;
+    color: white;
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+@media (min-width: 640px){
+    .personal div{
+        flex: 6;
+    }
+    .full-course .net{
+        height: 100%;
+    }
+    .personal div .malik{
+        position: absolute;
+        display: none;
+        /* left: 50px; */
+        /* display: flex; */
+        top: 95%;
+        /* align-items: center; */
+        justify-content: space-evenly;
+        width: 95%;
+        gap: 10px;
+    }
+    .personal div .malik div{
+        background-color: rgb(167, 167, 167);
+        border-radius: 12px;
+        padding: 1rem;
+        width: 14%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .full-course{
+        margin-top: 100px;
+    }
+    .full-course .net .name .curriculum{
+        background-color: white;
+        color: orangered;
+        border: 1px solid orangered;
+    }
+    .full-course .net .name .curriculum:hover{
+        transition: 3s;
+        color: white;
+        background-color: orangered;
+        border: 1px solid orangered;
+    }
+    .personal .moni{
+        width: 20%;
+    }
+}
+
+@media (min-width: 920px){
+    .personal div{
+        flex: 6;
+    }
+    .full-course .net{
+        height: 100%;
+    }
+    .personal div .malik{
+        position: absolute;
+        /* left: 50px; */
+        display: flex;
+        top: 95%;
+        /* align-items: center; */
+        justify-content: space-evenly;
+        width: 95%;
+        gap: 10px;
+    }
+    .personal div .malik div{
+        background-color: rgb(167, 167, 167);
+        border-radius: 12px;
+        padding: 1rem;
+        width: 14%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .full-course{
+        margin-top: 100px;
+    }
+    .full-course .net .name .curriculum{
+        background-color: white;
+        color: orangered;
+        border: 1px solid orangered;
+    }
+    .full-course .net .name .curriculum:hover{
+        transition: 3s;
+        color: white;
+        background-color: orangered;
+        border: 1px solid orangered;
+    }
+    .personal .moni{
+        width: 20%;
+    }
+}

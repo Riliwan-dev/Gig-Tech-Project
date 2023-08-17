@@ -1,0 +1,38 @@
+.full-course h1{
+    padding-top: 100px;
+}
+.jet{
+    padding: 1rem;
+    margin-bottom: 30px;
+}
+.jet .pro img{
+    width: 100%;
+}
+.more{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.more h4{
+    margin-bottom: 30px;
+}
+.more a{
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    padding: 1rem;
+    margin-top: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+@media (min-width: 640px){
+    .jet{
+        display: flex;
+        padding: 2rem;
+        gap: 30px;
+    }
+    .jet .pro:hover{
+        transform: scale(1.05);
+        transition: 2s;
+    }
+}

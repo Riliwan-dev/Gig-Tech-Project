@@ -1,0 +1,147 @@
+.col-one{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient( orangered, white); 
+}
+.col-one h2{
+    padding: 1rem;
+    color: black;
+    font-size: 3rem;
+}
+.col-one p{
+    color: black;
+    font-size: 1.3rem;
+    line-height: 25px;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+}
+.col-one a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: white;
+    color: orangered;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    width: 70%;
+    margin: auto;
+    box-shadow:  3px 6px 12px 6px rgb(248, 175, 148) ;
+}
+.col-one a:hover{
+    transition: 2s;
+    background: linear-gradient( rgb(0, 0, 0),rgb(252, 196, 176));
+    color: whitesmoke;
+    
+}
+.job{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+}
+.job.two{
+    flex-direction: column-reverse;
+}
+.job img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.job .oppo h2{
+    color: orangered;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.job .oppo p{
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 22px;
+}
+.mid{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.mid h1{
+    color: orangered;
+    margin-bottom: 20px;
+}
+.mid p{
+    font-weight: 500;
+}
+@media (min-width: 640px){
+    .col-one{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .col-one h2{
+        font-size: 3rem;
+    }
+    .col-one p{
+        color: black;
+        font-size: 1.3rem;
+        line-height: 25px;
+        max-width: 600px;
+        margin: auto;
+        padding: 1rem;
+    }
+    .col-one a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        background-color: white;
+        color: orangered;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 500;
+        width: 20%;
+        margin: auto;
+    }
+    .job{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 2rem;
+        gap: 30px;
+    }
+    .job.two{
+        flex-direction: row;
+    }
+    .job img{
+        width: 50%;
+        height: 50%;
+        border-radius: 12px;
+    }
+    .job .oppo h2{
+        color: orangered;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .job .oppo p{
+        font-weight: 500;
+        margin-bottom: 30px;
+        line-height: 22px;
+    }
+    .mid{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .mid h1{
+        color: orangered;
+        margin-bottom: 20px;
+    }
+    .mid p{
+        font-weight: 500;
+    }
+}

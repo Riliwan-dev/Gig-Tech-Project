@@ -1,0 +1,319 @@
+.personal{
+    background-color: rgb(192, 192, 192);
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 1rem;
+}
+.personal div h3{
+    color: orangered;
+    font-size: 34px;
+    font-weight: bold;
+}
+.personal div p{
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.personal div .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.personal .moni{
+    display: none;
+}
+/* full course */
+.full-course h1{
+    color: orangered;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.full-course p{
+    text-align: center;
+    line-height: 25px;
+    padding: 1rem;
+    font-weight: bold;
+}
+.full-course div .name{
+    margin-bottom: 30px;
+}
+.full-course div .name img{
+    width: 100%;
+}
+.full-course div .name .pad{
+    padding: 1rem;
+}
+.full-course div .name .pad .topic{
+    font-weight: bold;
+    font-size: 24px;
+}
+.full-course div .name .pad p{
+    text-align: left;
+    color: rgb(70, 69, 69);
+}
+.full-course div .name .pad .duration{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.full-course div .name .pad .duration img{
+    width: 10%;
+    height: 10%;
+}
+.full-course div .name .pad .duration p{
+    font-size: 14px;
+}
+.full-course div .name a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+}
+
+@media (min-width: 640px){
+    .personal{
+        display: flex;
+        align-items: center;
+        background-color: rgb(192, 192, 192);
+        margin: auto;
+        padding-top: 100px;
+        padding-left: 1rem;
+    }
+    .personal div h3{
+        color: orangered;
+        font-size: 4rem;
+        font-weight: bold;
+        max-width: 300px;
+    }
+    .personal div p{
+        font-weight: bold;
+        line-height: 25px;
+        margin-top: 20px;
+        max-width: 500px;
+    }
+    .personal div .icon{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        max-width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .personal div .icon img{
+        width: 100%;
+    }
+    .personal .moni{
+        display: block;
+    }
+    .personal .moni img{
+        width: 100%;
+        height: 500px;
+    }
+       /* full course */
+   .full-course h1{
+        color: orangered;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 20px;
+}
+.full-course p{
+    text-align: center;
+    line-height: 25px;
+    padding: 1rem;
+    font-weight: bold;
+}
+.full-course .net{
+    height: max-content;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.full-course div .name{
+    flex: 3;
+    width: 200px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 3px 3px 3px rgb(165, 165, 165);
+    border-radius: 12px;
+    height: fit-content;
+}
+.full-course div .name img{
+    width: 100%;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+}
+.full-course div .name.graphic .duration{
+    margin-top: 30px;
+}
+.full-course div .name .pad{
+    padding: 1rem;
+}
+.full-course div .name .pad .topic{
+    font-weight: bold;
+    font-size: 24px;
+}
+.full-course div .name .pad p{
+    text-align: left;
+    color: rgb(70, 69, 69);
+}
+.full-course div .name .pad .duration{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.full-course div .name .pad .duration img{
+    width: 10%;
+    height: 10%;
+    border-radius: 0%;
+}
+.full-course div .name .pad .duration p{
+    font-size: 14px;
+}
+.full-course div .name a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 920px){
+    .personal{
+        display: flex;
+        align-items: center;
+        background-color: rgb(192, 192, 192);
+        margin: auto;
+        padding-top: 100px;
+        padding-left: 1rem;
+    }
+    .personal div h3{
+        color: orangered;
+        font-size: 4rem;
+        font-weight: bold;
+        max-width: 300px;
+    }
+    .personal div p{
+        font-weight: bold;
+        line-height: 25px;
+        margin-top: 20px;
+        max-width: 500px;
+    }
+    .personal div .icon{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        max-width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .personal div .icon img{
+        width: 100%;
+    }
+    .personal .moni{
+        display: block;
+    }
+    .personal .moni img{
+        width: 100%;
+        height: 500px;
+    }
+       /* full course */
+   .full-course h1{
+        color: orangered;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 20px;
+}
+.full-course p{
+    text-align: center;
+    line-height: 25px;
+    padding: 1rem;
+    font-weight: bold;
+}
+.full-course .net{
+    /* width: fit-content; */
+    height: max-content;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.full-course div .name{
+    flex: 3;
+    width: 200px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 3px 3px 3px rgb(165, 165, 165);
+    border-radius: 12px;
+    height: fit-content;
+}
+.full-course div .name img{
+    width: 100%;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+}
+.full-course div .name.graphic .duration{
+    margin-top: 30px;
+}
+.full-course div .name .pad{
+    padding: 1rem;
+}
+.full-course div .name .pad .topic{
+    font-weight: bold;
+    font-size: 24px;
+}
+.full-course div .name .pad p{
+    text-align: left;
+    color: rgb(70, 69, 69);
+}
+.full-course div .name .pad .duration{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.full-course div .name .pad .duration img{
+    width: 10%;
+    height: 10%;
+    border-radius: 0%;
+}
+.full-course div .name .pad .duration p{
+    font-size: 14px;
+}
+.full-course div .name a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+}

@@ -1,0 +1,64 @@
+.back a{
+    text-decoration: none;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 20px;
+}
+.who{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+main{
+    padding: 1.5rem;
+}
+main .all{
+    margin-top: 30px;
+}
+main .all .mini{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 0px orangered;
+    padding: 1rem;
+    border-radius: 12px;
+}
+main .all .mini .king .hidden{
+    display: none;
+}
+main .all .fish{
+    padding: 1rem;
+    background-color: blanchedalmond;
+    margin-top: 10px;
+}
+.fish.hide{
+    display: none;
+}
+
+@media (min-width: 640px) {
+    main{
+        padding: 1.5rem;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        padding: 4rem;
+        width: 100%;
+    }
+    main .all{
+        margin-top: 30px;
+        
+    }
+    main .all .mini{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+       
+    }
+}

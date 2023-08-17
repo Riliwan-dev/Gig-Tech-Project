@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'poppins';
+}
+body{
+    width: 100%;
+}
+body .back{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.wrapper a{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+
+}
+.wrapper a img{
+    width: 20%;
+}
+.wrapper h1{
+    text-align: center;
+    color: orangered;
+    margin-top: 50px;
+}
+.wrapper p{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.wrapper form{
+    /* width: 100%; */
+    padding: 2rem;
+}
+.wrapper form div input{
+    width: 95%;
+    outline: none;
+    height: 30px;
+    background-color: rgba(255, 170, 139, 0.986);
+    border: none;
+    border-radius: 12px;
+    padding: .5rem;
+    margin-bottom: 10px;
+}
+.wrapper form div input::placeholder{
+    color: black;
+    font-weight: 200;
+}
+.wrapper form div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.wrapper form div label{
+    font-weight: 600;
+}
+.wrapper form .check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.wrapper form .check p{
+    flex: 6;
+    display: flex;
+    justify-content: left;
+}
+.wrapper form .check p input{
+    width: 15%;
+    height: 30px;
+}
+.wrapper form .check p label{
+    color:gray;
+    margin-top: 7px;
+}
+.wrapper form .check p a{
+    text-decoration: none;
+    color: red;
+    margin-top: -12px;
+}
+.wrapper form button{
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.wrapper form p{
+    color: gray;
+}
+.wrapper form p a{
+    text-decoration: none;
+    color: red;
+}
+body .image{
+    display: none;
+}
+
+@media (min-width: 640px){
+    body{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    body .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+        height: 90vh;
+        margin: auto;
+        /* width: 400px; */
+        /* margin-left: 10%; */
+        /* width: 50%; */
+    }
+    body .image{
+        display: block;
+        background-color: rgb(253, 133, 89);
+        max-height: 120vh ;
+        /* width: 50%; */
+    }
+    .body .image img{
+        height: 100%;
+        width: 100%;
+    }
+    .wrapper form{
+        width: 400px;
+    }
+
+}

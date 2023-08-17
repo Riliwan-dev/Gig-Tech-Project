@@ -1,0 +1,96 @@
+.full-course .net .crash{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.full-course .net .crash img{
+    width: 100%;
+}
+.full-course .net .crash .pad{
+    padding: 1rem;
+}
+.full-course .net .crash .pad .topic{
+    font-weight: bold;
+    font-size: 24px;
+}
+.personal .moni .pics{
+    width: 100%;
+}
+.full-course .net .crash .pad p{
+    text-align: left;
+    color: rgb(70, 69, 69);
+}
+.full-course .net .crash .pad .duration{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.full-course .net .crash .pad .duration img{
+    width: 10%;
+    height: 10%;
+}
+.full-course .net .crash .pad .duration p{
+    font-size: 14px;
+}
+.full-course .net .crash a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+}
+
+
+@media (min-width: 640px){
+    .full-course .net .crash{
+        width: 30%;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 3px 0 rgb(253, 218, 153);
+        padding-bottom: 1rem;
+        border-radius: 12px;
+    }
+    .full-course .net .crash img{
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+    .full-course .net .crash .pad{
+        padding: 1rem;
+    }
+    .full-course .net .crash .pad .topic{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .full-course .net .crash .pad p{
+        text-align: left;
+        color: rgb(70, 69, 69);
+    }
+    .full-course .net .crash .pad .duration{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .full-course .net .crash .pad .duration img{
+        width: 10%;
+        height: 10%;
+        border-radius: 0;
+    }
+    .full-course .net .crash .pad .duration p{
+        font-size: 14px;
+    }
+    .full-course .net .crash a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: orange;
+        color: white;
+        padding: 1rem;
+        width: 90%;
+        margin: auto;
+        border-radius: 12px;
+    }
+}
