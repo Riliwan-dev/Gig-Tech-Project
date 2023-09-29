@@ -14,7 +14,7 @@
             <div class="note">
                 <h1>Structured and Supervised learning that helps you build a rapid tech career</h1>
                 <p>Jump on a high rewarding skill</p>
-                <a href="signup.php" >Register</a>
+                <a href="Payment_Details.php" >Register</a>
             </div>
             <div class="mypic">
                 <img src="images/king.jpeg" alt="">

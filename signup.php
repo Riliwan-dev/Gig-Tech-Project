@@ -18,28 +18,32 @@
         <a href="index.php"><img src="images/gig.png" alt=""></a>
         <h1>Welcome,</h1>
         <p>Sign up to create new account</p>
-        <form>
+
+        <?php include("include/validate.php"); ?>
+        <form method="POST" action="">
             <div>
                 <label for="email">First Name</label>
-                 <input type="text" placeholder="Enter first name" required>
+                 <input type="text" name="firstname" placeholder="Enter first name" required>
             </div>
             <div>
                 <label for="email">Last Name</label>
-                 <input type="text" placeholder="Enter last name" required>
+                 <input type="text" name="lastname" placeholder="Enter last name" required>
             </div>
             <div>
                 <label for="email">Email</label>
-                 <input type="text" placeholder="example@gmail.com" required>
+                 <input type="text" name="email" placeholder="example@gmail.com" value="<?php if(isset($_GET['email'])){echo $_GET['email'];}else{echo "";}  ?>" required>
             </div>
             <div>
                 <label for="password">Password*</label>
-                 <input type="password" placeholder="Min 8 Character" maxlength="8" required>
+                 <input type="password" name="password" placeholder="Min 8 Character" maxlength="8" required>
             </div>
-            <button type="submit">Continue</button>
+            <button type="submit" name="register" >Continue</button>
             <div>
                 <p>Already have an account?  <a href="login.php">Sign in</a></p>
             </div>
         </form>
+
+
     </div>
     <div class="image">
         <img src="images/Mask Group.0f3abb35.png" alt="">

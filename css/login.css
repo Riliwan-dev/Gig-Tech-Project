@@ -101,6 +101,10 @@ body .back{
 body .image{
     display: none;
 }
+button a{
+    text-decoration: none;
+    color: black;
+}
 
 @media (min-width: 640px){
     body{

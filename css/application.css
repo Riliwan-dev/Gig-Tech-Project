@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    padding: 4em 5em;
+}
+
+section-one .row{
+    display: flex;
+    line-height: 35px;
+}
+
+.col-4 {
+    flex: 4;
+}
+
+.col-4 img{
+    width: 10em;
+}
+.row .text{
+    text-align: center;
+}
+
+.row .text h4{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.row .text h5{
+    font-size: 20px;
+}
+
+.row .text h6{
+    font-size: 18px;
+    background: orangered;
+    border-radius: 3px;
+    color: white;
+}
+
+.row .text p{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* section-two{ */
+    /* padding: 2px; */
+    /* width: 100%; */
+    /* outline: 2px solid black; */
+    /* height: 60px; */
+/* } */
+.section-two .row{
+    padding: 10px;
+}
+
+section-two .row h6{
+    padding: 7px;
+    font-size: 18px;
+    background: orangered;
+    border-radius: 3px;
+    color: white;
+}
+
+form{
+    padding: 10px 0px;
+}
+
+.form-group{
+    display: flex;
+    gap: 10px;
+}
+
+.form-input{
+    flex: 4;
+    text-align: center;
+}
+
+.form-input label{
+    font-size: 15px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
+}
+
+.form-input .input-form input{
+    /* max-height: 100px; */
+    background-color: rgb(253, 133, 89);
+    max-width: 250px;
+    height: 38px;
+    width: 100%;
+    padding: .5rem;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+/* continue */
+section-two p{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+/* li{
+    list-style-type: lower-alpha;
+} */
+
+  @media screen and (max-width: 414px) {
+    .wrapper{
+        padding: 20px;
+    }
+    
+    section-one .row{
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        text-align: center;
+    }
+   
+    .col-4 {
+        flex: 4;
+    }
+    
+    .col-4 img{
+        width: 10em;
+    }
+    
+    .row .text{
+        text-align: center;
+    }
+    
+    .row .text h4{
+        font-size: 13px;
+        font-weight: bolder;
+    }
+    
+    .row .text h5{
+        font-size: 16px;
+    }
+    
+    .row .text h6{
+        font-size: 16px;
+        background: orangered;
+        border-radius: 3px;
+        color: white;
+    }
+    
+    .row .text p{
+        font-size: 12px;
+        font-weight: bolder;
+    }
+  
+    
+     
+    form{
+        padding: 10px 0px;
+    }
+    
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-input{
+        /* flex: 4; */
+        text-align: left;
+    }
+
+    .form-input .input-form input{
+        max-width: 400px;
+        /* height: 50px; */
+        width: 100%;
+        background-color: rgb(253, 133, 89);
+        border: none;
+        outline: none;
+    }
+
+    section-two p{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    }
+  }

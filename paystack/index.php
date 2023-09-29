@@ -1,8 +1,8 @@
 <?php
 $curl = curl_init();
 
-$email = "genius.rio121@gmail.com";
-$amount = 300;  //the amount in kobo. This value is actually NGN 300
+$email =$_GET['email']; //"genius.rio121@gmail.com";
+$amount = $_GET['fee']*100;  //the amount in kobo. This value is actually NGN 300
 
 // url to go to after payment
 // $callback_url = 'localhost/paystack/callback.php';  
@@ -16,7 +16,7 @@ $amount = 300;  //the amount in kobo. This value is actually NGN 300
                             //Use These
 // $callback_url = 'http://localhost/Php%202023/GitMistake/gitneww/Payment_Details.php/\paystack/callback.php'; //form one files to a folder use /\
                           //or
-$callback_url = 'http://localhost/Php%202023/GitMistake/gitneww/Payment_Details.php//paystack/callback.php'; //form one files to a folder use //
+$callback_url = 'http://localhost/Php2023/GitMistake/gitneww/paystack/callback.php?email='.$email; //form one files to a folder use //
 // $callback_url = 'http://localhost/Php 2023/GitMistake/gitneww/paystack/callback.php';
 
 
