@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,60 +19,50 @@
     <div class="wrapper">
         <a href="index.php"><img src="images/gig.png" alt=""></a>
         <h1>Hi, there</h1>
-        <p>Sign in to acess your account</p>
+        <p>Sign in to access your account</p>
 
+        <?php include("include/validate.php");?>
 
-        <!-- <form>
+        <form method="post" action="">
             <div>
                 <label for="email">Email</label>
-                 <input type="email" placeholder="example@gmail.com" required>
+                <input type="email" name="email" value="<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>" placeholder="example@gmail.com" required>
             </div>
             <div>
-                <?php //if (isset($_GET['password'])){?>
-                <label for="password">Password</label>
-                 <input type="password" placeholder="Min 8 Character" maxlength="8" required>
-                 <?php// } ?>
-            </div>
-            <div class="check">
-                <p><input type="checkbox" name="remeber me" id="rem"><label>Remeber me</label></p>
-                <p><a href="#">Forget password?</a></p>
-            </div>
-            <button type="submit">Continue</button>
+                <?php if (isset($_GET['password'])) { ?>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Min 8 Characters" maxlength="8" required>
+                    <?php } ?>
+                </div>
+                <img src="images/show.png" alt="show password" id="togglePassword" onclick="togglePasswordVisibility()">
+            <!-- ... other fields ... -->
+            <button type="submit" name="login">Continue</button>
             <div>
                 <p>Not registered yet? <a href="Payment_Details.php">Sign up</a></p>
             </div>
-        </form> -->
-                    <?php include("include/validate.php");?>
-        <form method="post" action="">
-    <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" value="<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>" placeholder="example@gmail.com" required>
-    </div>
-    <div>
-        <?php if (isset($_GET['password'])) { ?>
-            <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Min 8 Character" maxlength="8" required>
-        <?php } ?>
-    </div>
-    <!-- ... other fields ... -->
-    <button type="submit" name="login">Continue</button>
-    <div>
-        <p>Not registered yet? <a href="Payment_Details.php">Sign up</a></p>
-    </div>
-</form>
-
-
-
+        </form>
     </div>
     <div class="image">
         <img src="images/Mask Group.0f3abb35.png" alt="">
     </div>
 
-
     <script>
         function goBack() {
-          window.history.back();
+            window.history.back();
         }
-      </script>
+
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            var togglePasswordImg = document.getElementById("togglePassword");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                togglePasswordImg.src = "images/eye-off-icon.png"; // Image for hiding the password
+            } else {
+                passwordInput.type = "password";
+                togglePasswordImg.src = "eye-icon.png"; // Image for showing the password
+            }
+        }
+    </script>
 </body>
 </html>

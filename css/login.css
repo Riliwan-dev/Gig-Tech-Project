@@ -18,6 +18,14 @@ body .back{
     margin-bottom: -3rem;
 
 }
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+}
 .wrapper a img{
     width: 20%;
 }
